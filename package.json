@@ -1,0 +1,27 @@
+{
+  "name": "temp-with-bootstrap-and-sass-3",
+  "version": "1.0.0",
+  "description": "Temp with bootstrap and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "making",
+    "a",
+    "simple",
+    "template",
+    "by",
+    "useing",
+    "bootstrap",
+    "and",
+    "sass"
+  ],
+  "author": "Hoso",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "fontawesome": "^5.6.3",
+    "sass": "^1.57.1"
+  }
+}
