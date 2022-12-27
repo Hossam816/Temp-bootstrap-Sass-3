@@ -1,0 +1,19 @@
+@use '../custom' as *;
+
+
+//POSTIONABSOLUTE
+@mixin absoluteProperty () {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+//TRANSITION PROPERTY
+@mixin transitionFunction () {
+    transition-property: all;
+    transition-duration: .25s;
+    transition-timing-function: linear;
+}

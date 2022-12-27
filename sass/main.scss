@@ -1,5 +1,17 @@
 @import './custom';
 
+
+//import components
+
+@import './components/mixin';
+@import './components/buttons';
+
+//import sections
+
+@import './sections/showcase';
+@import './sections/tabsection';
+@import './sections/footer';
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +21,32 @@
 
 body {
     font-size: 15px;
-    background: #fff;
+    background: #000;
+    color: $gray-900;
+}
 
+.container {
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $white;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
 }

@@ -1,0 +1,23 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.footer {
+    color: $gray-500;
+    padding: 2rem 0;
+
+    p {
+        padding: 10px 0;
+    }
+
+    .footer-content>div {
+        border-bottom: 1px solid $gray-600;
+        padding-bottom: .5rem;
+
+        a {
+            display: block;
+            color: $gray-500;
+            margin-top: 1rem;
+            font-size: 1.5rem
+        }
+    }
+}

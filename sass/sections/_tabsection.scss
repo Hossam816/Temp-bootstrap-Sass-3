@@ -1,0 +1,154 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.tabs {
+    padding-top: 2rem;
+    border-bottom: 3px solid $gray-600;
+    background: $gray-900;
+
+    .container {
+        width: 70% !important;
+
+    }
+
+    .tab-item {
+        color: $gray-500;
+        padding: 1.5rem 0;
+        cursor: pointer;
+        font-weight: bold;
+        width: 33%;
+
+        &.br-bottom {
+            border-bottom: 4px solid $secondary;
+        }
+
+        p {
+            font-size: 25px;
+
+            @include media-breakpoint-down(lg) {
+                & {
+                    display: none;
+                }
+            }
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.tab-content {
+    padding: 4rem 0;
+
+    .row {
+        justify-content: center;
+        align-items: center;
+        color: $white;
+
+        p {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            font-weight: bold;
+        }
+
+        a {
+            padding: 1rem 2rem;
+        }
+
+    }
+
+    .text-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        margin: 1rem auto;
+
+        @include media-breakpoint-down(lg) {
+            & {
+                grid-template-columns: 1fr;
+                width: 100% !important;
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                a {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        a {
+            font-size: 1.8rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 0;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+        &>div {
+            padding: 1rem;
+        }
+    }
+
+    h3 {
+        color: $white;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+
+    p {
+        color: $gray-500;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+}
+
+.tab-content-item {
+    .table-content {
+        margin-top: 1rem;
+
+        th {
+            color: $white;
+        }
+
+        tr {
+            color: $gray-500;
+
+            td,
+            th {
+                border: none;
+                font-size: 1.5rem;
+                padding: 1rem;
+                font-weight: bold;
+            }
+        }
+
+        tbody {
+            tr:nth-child(odd) {
+                background: $gray-900;
+            }
+        }
+    }
+}
