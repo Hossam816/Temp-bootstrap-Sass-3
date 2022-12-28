@@ -19,7 +19,8 @@
         width: 33%;
 
         &.br-bottom {
-            border-bottom: 4px solid $secondary;
+            border-bottom: 5px solid $secondary;
+            color: $white !important;
         }
 
         p {
@@ -125,7 +126,7 @@
     }
 }
 
-.tab-content-item {
+.tab-content-item__fo {
     .table-content {
         margin-top: 1rem;
 

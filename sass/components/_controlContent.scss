@@ -1,0 +1,12 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
